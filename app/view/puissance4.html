@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Puissance 4</title>
+    <link rel = stylesheet href="../styles/p4Style.css">
+</head>
+<body>
+<div class="modal">
+    <div class="contenuModal">
+        <span class = "rejouer"> Rejouer </span>
+        <p id="textModal">Texte modale</p>
+        <div id="footerModal"><img src="../assets/homePageIcon.png" id="homePageImage"></div>
+    </div>
+</div>
+<main class = "miseEnPage">
+
+    <input type="button" value ="QUITTER" class="btn btn-turnBack">
+
+    <div class="container gameBox">
+        <div class="game-element game-back">
+            <div class="game-user-block">
+                <div class="game-user-elem high-score">
+                    <h1 class="score"></h1>
+                </div>
+
+                <div class="game-user-elem game-user-spec">
+                    <div class="user-spec user-fullName"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="game-element game-container" id="game-container">
+            <canvas></canvas>
+        </div>
+    </div>
+</main>
+<!--<div class="canvasContainer">
+
+</div>-->
+
+
+</body>
+<script type="module" src="../controller/games/puissance4/puissance4.js"></script>
+</html>

@@ -1,0 +1,171 @@
+@font-face {
+    font-family: custom;
+    src: url(fonts/MochiYPopPOne-Regular.ttf);
+}
+
+#body {
+    background-color: rgb(100, 98, 94);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game {
+    display: flex;
+    flex-direction: row;
+}
+
+#text {
+    margin-left: 20px;
+    align-content: flex-start;
+    width: 700px;
+}
+
+#title {
+    font-size: 50px;
+    margin: 50px;
+    font-family: custom;
+    color: #f7fcfc;
+}
+
+#grille {
+    width: 70%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 60px;
+    border: 5px solid rgba(247, 252, 252, 0.58);
+    box-shadow: 0 2px 5px 2px rgba(136, 138, 138, 0.58);
+    background-image: url("../assets/background_motscroises.png");
+    background-size: 640px 620px;
+}
+
+.lettre-cachee {
+    visibility: hidden;
+}
+.lettre {
+    border: 2px solid rgb(100, 100, 100);
+    transition: 0.5s all;
+    text-align: center;
+    font-family: Verdana, fangsong;
+    font-size: 40px;
+    vertical-align: middle;
+    background-color: rgba(246, 246, 246, 0.64);
+}
+
+.button {
+    border: none;
+    color: #010D23;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 18px;
+    background-color: #F6F6F6;
+    box-shadow: 0 2px 15px 2px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.4s ease-in-out;
+    font-weight: bold;
+    margin: 10px;
+}
+.button:hover {
+    color: #FFFFFF;
+    background-color: rgb(44, 42, 39);
+    font-weight: bold;
+}
+
+#simple {
+    background-color: rgba(80, 189, 80, 0.44);
+}
+#simple:hover {
+    background-color: rgb(63, 148, 63);
+    color: #F6F6F6;
+}
+
+#moyen {
+    background-color: rgba(217, 200, 92, 0.44);
+}
+#moyen:hover {
+    background-color: rgb(173, 159, 74);
+    color: #F6F6F6;
+}
+
+#difficile {
+    background-color: rgba(189, 109, 80, 0.44);
+}
+#difficile:hover {
+    background-color: rgb(154, 90, 67);
+    color: #F6F6F6;
+}
+
+#input {
+    border: none;
+    color: #010D23;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 18px;
+    background-color: #F6F6F6;
+    box-shadow: 0 2px 15px 2px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.4s ease-in-out;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#def {
+    font-size: 20px;
+    color: #f7fcfc;
+    font-family: Verdana, fangsong;
+}
+
+#accueil {
+    font-size: 25px;
+    height: 50px;
+}
+
+.modal{
+    width: 600px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+}
+
+.contenuModal{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(155,145,125);
+    border: 1px solid #888;
+    width: 600px; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+#imageModal{
+    width: 300px;
+    text-align: center;
+}
+
+#rejouer{
+    width: 130px;
+    align-content: end;
+}
+
+#footerModal{
+    display: flex;
+    margin: auto;
+    grid-area: 3 / 3 / 4 / 4;
+    align-content: end;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#homePageImage{
+    width: 15%;
+    border-radius: 50%;
+    border: 3px solid black;
+    padding: 5px;
+}
